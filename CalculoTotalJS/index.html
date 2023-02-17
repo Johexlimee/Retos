@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Reto 1</title>
 </head>
 <body>
@@ -14,8 +15,8 @@
     </header>
     <form class="form">
         <label for="cantidad"></label>
-        <input type="number" name="cantidad" placeholder="Ingrese Cantidad">
-        <select class="opcion" name="opcion" id="opcion">
+        <input type="number" name="cantidad" id="cantidad" placeholder="Ingrese Cantidad">
+        <select class="optColor" name="optColor" id="optColor">
             <option value="0" selected>Seleccione un color</option>
             <option value="rojo">Rojo Claro</option>
             <option value="verde">Verde Mate</option>
@@ -24,7 +25,7 @@
             <option value="negro">Blanco</option>
         </select>
         <h2>Precio: 400000</h2>
-        <button type="button" class="btn" id="Calcular">Calcular total</button>
+        <button type="button" class="btn" id="calcular">Calcular total</button>
     </form>
     <section>
         <div class="caracteristicas" id="caracteristicas"></div>
@@ -32,10 +33,11 @@
     <section id="caracteristicas">
         <div class="card">
             <h3>Caracteristicas:</h3>
-            <h4 class="total">Total: </h4>
-            <h4 class="cant">Cantidad: </h4>
-            <h4 class="color">color: </h4>  
+            <h4 class="total" id="total">Total: </h4>
+            <h4 class="cant" id="cant">Cantidad: </h4>
+            <h4 class="color" id="color">color: </h4>  
         </div>
     </section>
+    <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>
