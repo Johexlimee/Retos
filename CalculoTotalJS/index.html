@@ -13,31 +13,38 @@
             <h1>Calculando el total JS</h1>
         </div>
     </header>
-    <form class="form">
-        <label for="cantidad"></label>
-        <input type="number" name="cantidad" id="cantidad" placeholder="Ingrese Cantidad">
-        <select class="optColor" name="optColor" id="optColor">
-            <option value="0" selected>Seleccione un color</option>
-            <option value="rojo">Rojo Claro</option>
-            <option value="verde">Verde Mate</option>
-            <option value="azul">Azul Oscuro</option>
-            <option value="negro">Negro</option>
-            <option value="negro">Blanco</option>
-        </select>
-        <h2>Precio: 400000</h2>
-        <button type="button" class="btn" id="calcular">Calcular total</button>
-    </form>
-    <section>
-        <div class="caracteristicas" id="caracteristicas"></div>
-    </section>
-    <section id="caracteristicas">
-        <div class="card">
-            <h3>Caracteristicas:</h3>
-            <h4 class="total" id="total">Total: </h4>
-            <h4 class="cant" id="cant">Cantidad: </h4>
-            <h4 class="color" id="color">color: </h4>  
-        </div>
-    </section>
+    <main class="container">
+        <section>
+            <div class="cajaIzq">
+                <form class="form">
+                    <img src="./assets/img/Omen.png" alt="Omen" height="auto" width="300px">
+                    <p>Laptop gamer Omen</p>
+                    <input type="number" id="cantidad" placeholder=" Cantidad">
+                    <select class="optColor" name="optColor" id="optColor">
+                        <option value="0" selected> Color</option>
+                        <option value="rojo">Rojo Claro</option>
+                        <option value="verde">Verde Mate</option>
+                        <option value="azul">Azul Oscuro</option>
+                        <option value="negro">Negro</option>
+                        <option value="blanco">Blanco</option>
+                    </select>
+                    <h2>Precio: 400000</h2>
+                    <button type="button" class="btn" id="calcular">Calcular total</button>
+                </form>
+            </div>
+        </section>
+        <section id="caracteristicas">
+            <div class="cajaDer">
+                <h3>Caracteristicas:</h3>
+                <h4 class="total" id="total">Total: $0</h4>
+                <h4 class="cant" id="cant">Cantidad: 0</h4>
+                <h4 class="color" id="color">color: </h4>
+                <div id="divColor">
+                    <p id="seeColor"></p>
+                </div>
+            </div>
+        </section>
+    </main>
     <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>
