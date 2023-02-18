@@ -11,20 +11,19 @@ btnCalcular.onclick = function (){
         
         switch (color){
             case "rojo":
-                document.getElementById('seeColor').innerText="Rojo claro";
-                document.getElementById('divColor').style.backgroundColor='lightcoral';
+                document.getElementById('divColor').style.backgroundColor='salmon';
             break;
             case "verde":
-                document.getElementById('seeColor').innerText="Verde Mate";
+                document.getElementById('divColor').style.backgroundColor='olive';
             break;
             case "azul":
-                document.getElementById('seeColor').innerText="Azul Oscuro";
+                document.getElementById('divColor').style.backgroundColor='darkblue';
             break;
             case "negro":
-                document.getElementById('seeColor').innerText="Negro";
+                document.getElementById('divColor').style.backgroundColor='black';
             break;
             case "blanco":
-                document.getElementById('seeColor').innerText="Blanco";
+                document.getElementById('divColor').style.backgroundColor='white';
             break;
         }
     } else {
